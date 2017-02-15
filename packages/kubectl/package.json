@@ -1,11 +1,11 @@
 {
-  "name": "kubectl-cli",
+  "name": "kubectl-cli-temp-2017",
   "version": "1.5.3",
   "description": "kubernetes management tool",
   "main": "manifest.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "node download.js",
+    "preinstall": "node download.js",
     "prepublish": "cp ../../download.js ."
   },
   "bin": {

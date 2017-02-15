@@ -82,5 +82,10 @@ if (!module.parent) {
       process.exit(1);
     }
     fs.chmodSync(data.path, "0755");
+    // Symlink for windows .exe files
+    if (data.path.indexOf(".exe") === data.path.length - 4) {
+      var newPath = data.path.slice(0, -4);
+      fs.linkSync(data.path, newPath);
+    }
   });
 }
