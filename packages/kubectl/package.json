@@ -1,10 +1,15 @@
 {
   "name": "kubectl-cli",
-  "version": "0.0.0",
+  "version": "1.5.3",
   "description": "kubernetes management tool",
   "main": "manifest.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node download.js",
+    "prepublish": "cp ../../download.js ."
+  },
+  "bin": {
+    "kubectl": "./kubectl"
   },
   "repository": {
     "type": "git",

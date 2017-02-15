@@ -2,11 +2,12 @@
 var https = require("https");
 var resolve = require("path").resolve;
 var fs = require("fs");
+var os = require("os");
 var TIMEOUT_DELAY = 2000;
 var PERCENTAGE_INTERVAL = .1;
 var crypto = require("crypto");
 
-module.exports = function(version, cb) {
+module.exports = function download(version, cb) {
   if (!version.sha256 && !process.env.DONT_WORRY_I_AM_BUILDING_A_NEW_VERSION) {
     throw new Error("Unknown SHA256 hash for this version " + JSON.stringify(version));
   }
@@ -58,5 +59,28 @@ module.exports = function(version, cb) {
       }
     })
     .pipe(outputStream);
+  });
+}
+
+// If we're called directly, that means we're the download script. Let's go!
+if (!module.parent) {
+  var manifest = require("./manifest.json");
+  var pkg = require("./package.json");
+  var version = manifest.versions["v" + pkg.version];
+  if (!version) {
+    throw new Error("Unknown version of " + pkg.name + ": " + version);
+  }
+  var platform = os.platform();
+  var arch = os.arch();
+  var platArch = [platform, arch].join("-");
+  if (!version[platArch]) {
+    throw new Error(pkg.name + " doesn't appear to be available for platform/architecture " + platArch);
+  }
+  module.exports(version[platArch], function(err, data) {
+    if (err) {
+      console.error("error installing " + pkg.name + ": " + err, err.stack);
+      process.exit(1);
+    }
+    fs.chmodSync(data.path, "0755");
   });
 }
