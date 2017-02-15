@@ -1,0 +1,14 @@
+{
+  "supported_computers": [
+    {"platform": "darwin", "arch": "x64"},
+    {"platform": "darwin", "arch": "x86"},
+    {"platform": "linux", "arch": "arm"},
+    {"platform": "linux", "arch": "arm64"},
+    {"platform": "linux", "arch": "ppc64"},
+    {"platform": "linux", "arch": "s390x"},
+    {"platform": "linux", "arch": "x64"},
+    {"platform": "linux", "arch": "x86"},
+    {"platform": "win32", "arch": "x64"},
+    {"platform": "win32", "arch": "x86"}
+  ]
+}
