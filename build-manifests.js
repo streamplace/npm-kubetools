@@ -25,22 +25,26 @@ tools.forEach(function (toolName) {
     var platform = computer.platform;
     var arch = computer.arch;
     tags.forEach(function(version) {
-      var verTag = [version, platform, arch].join("-");
-      if (manifest.versions[verTag] === undefined) {
-        manifest.versions[verTag] = {};
+      if (manifest.versions[version] === undefined) {
+        manifest.versions[version] = {};
+      }
+      var versionObj = manifest.versions[version];
+      var platArch = [platform, arch].join("-");
+      if (versionObj[platArch] === undefined) {
+        versionObj[platArch] = {};
       }
       // If null, we've determined this is a bum pair
-      if (manifest.versions[verTag] === null) {
+      if (versionObj[platArch] === null) {
         return;
       }
-      manifest.versions[verTag].url = getUrl(version, platform, arch);
+      versionObj[platArch].url = getUrl(version, platform, arch);
     });
   });
 
   save();
 
   var versionsToFix = [];
-  var total = Object.keys(manifest.versions).length;
+  var total = Object.keys(manifest.versions).length * manifest.supported_computers.length;
 
   var next = function() {
     var remaining = total - versionsToFix.length;
@@ -52,13 +56,14 @@ tools.forEach(function (toolName) {
     getInfo(nextTag);
   }
 
-  var getInfo = function(versionTag) {
-    var version = manifest.versions[versionTag];
-    console.log(versionTag);
+  var getInfo = function(tuple) {
+    var versionTag = tuple[0];
+    var platArch = tuple[1];
+    var version = manifest.versions[versionTag][platArch];
     download(version, function(err, data) {
       if (err) {
         console.error(err);
-        manifest.versions[versionTag] = null;
+        manifest.versions[versionTag][platArch] = null;
         save();
         return next();
       }
@@ -71,9 +76,11 @@ tools.forEach(function (toolName) {
 
   Object.keys(manifest.versions).forEach(function(versionTag) {
     var version = manifest.versions[versionTag];
-    if (version !== null && !version.sha256) {
-      versionsToFix.push(versionTag);
-    }
+    Object.keys(version).forEach(function(platArch) {
+      if (version[platArch] !== null && !version[platArch].sha256) {
+        versionsToFix.push([versionTag, platArch]);
+      }
+    });
   });
 
   next();
