@@ -39,25 +39,42 @@ tools.forEach(function (toolName) {
 
   save();
 
-  const getInfo = function(version) {
+  var versionsToFix = [];
+  var total = Object.keys(manifest.versions).length;
+
+  var next = function() {
+    var remaining = total - versionsToFix.length;
+    console.log(remaining + " / " + total);
+    if (versionsToFix.length === 0) {
+      return console.log("Done with rebuild!");
+    }
+    var nextTag = versionsToFix.pop();
+    getInfo(nextTag);
+  }
+
+  var getInfo = function(versionTag) {
+    var version = manifest.versions[versionTag];
+    console.log(versionTag);
     download(version, function(err, data) {
       if (err) {
         console.error(err);
-        process.exit(1);
+        manifest.versions[versionTag] = null;
+        save();
+        return next();
       }
       version.size = data.size;
       version.sha256 = data.sha256;
       save();
+      next();
     });
   };
 
-  var versionsToFix = [];
   Object.keys(manifest.versions).forEach(function(versionTag) {
     var version = manifest.versions[versionTag];
-    if (!manifest.sha256) {
-      versionsToFix.push(version);
+    if (version !== null && !version.sha256) {
+      versionsToFix.push(versionTag);
     }
   });
 
-  getInfo(manifest.versions[Object.keys(manifest.versions)[0]]);
+  next();
 });

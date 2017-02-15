@@ -19,7 +19,7 @@ const kubeArchs = {
 module.exports.getUrl = function(version, platform, arch) {
   platform = kubePlatforms[platform];
   arch = kubeArchs[arch];
-  return ([
+  var url = ([
     "https://storage.googleapis.com/kubernetes-release/release",
     version,
     "bin",
@@ -27,4 +27,8 @@ module.exports.getUrl = function(version, platform, arch) {
     arch,
     "kubectl"
   ]).join("/");
+  if (platform === "windows") {
+    url += ".exe";
+  }
+  return url;
 };

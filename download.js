@@ -2,7 +2,7 @@
 var https = require("https");
 var resolve = require("path").resolve;
 var fs = require("fs");
-var TIMEOUT_DELAY = 20000;
+var TIMEOUT_DELAY = 2000;
 var PERCENTAGE_INTERVAL = .1;
 var crypto = require("crypto");
 
