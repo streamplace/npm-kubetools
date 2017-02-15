@@ -1,0 +1,21 @@
+{
+  "name": "kubectl-cli",
+  "version": "0.0.0",
+  "description": "kubernetes management tool",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streamplace/npm-kubetools/tree/master/packages/kubectl"
+  },
+  "keywords": [
+    "kubectl",
+    "kubernetes",
+    "docker",
+    "devops"
+  ],
+  "author": "The Kubernetes Authors",
+  "license": "Apache-2.0"
+}
