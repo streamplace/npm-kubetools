@@ -1,12 +1,12 @@
 {
-  "name": "helm-cli",
+  "name": "helm-cli-test",
   "version": "2.2.0",
   "description": "package manager for kubernetes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node download.js",
-    "prepublish": "cp ../../download.js ."
+    "postinstall": "node download.js",
+    "prepublish": "echo '' > helm && cp ../../download.js ."
   },
   "bin": {
     "helm": "./helm"

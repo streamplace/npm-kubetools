@@ -6,6 +6,24 @@ var os = require("os");
 var TIMEOUT_DELAY = 2000;
 var PERCENTAGE_INTERVAL = .1;
 var crypto = require("crypto");
+var stream = require("stream");
+
+function unTarGz(inputStream) {
+  var zlib = require("zlib");
+  var tar = require("tar");
+  var ungz = zlib.createGunzip();
+  inputStream.pipe(ungz);
+  var untar = tar.Parse();
+  ungz.pipe(untar);
+  var pass = new stream.PassThrough();
+  untar.on("entry", function(entry) {
+    // Find the binary! This is gonna have to change if these projects ever use more than one.
+    if (entry.props.size > 0 && entry.props.mode.toString(8) === "775") {
+      entry.pipe(pass);
+    }
+  });
+  return pass;
+}
 
 module.exports = function download(version, cb) {
   if (!version.sha256 && !process.env.DONT_WORRY_I_AM_BUILDING_A_NEW_VERSION) {
@@ -14,8 +32,18 @@ module.exports = function download(version, cb) {
   var filename = version.url.split("/").pop();
   process.stderr.write("Downloading " + filename + "... ");
   var outputPath = resolve(__dirname, filename);
-  var outputStream = fs.createWriteStream(outputPath);
   var shasum = crypto.createHash("sha256");
+  var fileStream = fs.createWriteStream(outputPath);
+
+  // Untar if necessary.
+  var outputStream;
+  if (filename.match(/.tar.gz$/)) {
+    outputStream = new stream.PassThrough();
+    unTarGz(outputStream, filename).pipe(fileStream);
+  }
+  else {
+    outputStream = fileStream;
+  }
 
   var err = function(message) {
     cb(new Error(message + " while trying to download " + filename + " from " + version.url));

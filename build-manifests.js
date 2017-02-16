@@ -67,6 +67,7 @@ tools.forEach(function (toolName) {
         save();
         return next();
       }
+      fs.unlinkSync(data.path);
       version.size = data.size;
       version.sha256 = data.sha256;
       save();
