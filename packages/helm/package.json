@@ -1,0 +1,30 @@
+{
+  "name": "helm-cli",
+  "version": "2.2.0",
+  "description": "package manager for kubernetes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node download.js",
+    "prepublish": "cp ../../download.js ."
+  },
+  "bin": {
+    "helm": "./helm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streamplace/npm-kubetools/tree/master/packages/kubectl"
+  },
+  "keywords": [
+    "kubectl",
+    "kubernetes",
+    "helm",
+    "docker",
+    "devops"
+  ],
+  "author": "The Kubernetes Authors",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tar": "^2.2.1"
+  }
+}

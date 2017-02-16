@@ -4,3 +4,4 @@
 packages/*/download.js
 lerna-debug.log
 /minikube-*
+node_modules
