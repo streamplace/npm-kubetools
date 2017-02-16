@@ -3,3 +3,4 @@
 *.exe
 packages/*/download.js
 lerna-debug.log
+/minikube-*

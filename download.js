@@ -27,9 +27,12 @@ module.exports = function download(version, cb) {
 
   var lastUpdated = -PERCENTAGE_INTERVAL;
 
-  https.get(version.url, function(res) {
+  var handleResponse = function(res) {
     clearTimeout(timeout);
-    if (res.statusCode !== 200) {
+    if (res.statusCode === 302 || res.statusCode === 301) {
+      return https.get(res.headers.location, handleResponse);
+    }
+    else if (res.statusCode !== 200) {
       return err("HTTP " + res.statusCode);
     }
     var size = 0;
@@ -59,7 +62,9 @@ module.exports = function download(version, cb) {
       }
     })
     .pipe(outputStream);
-  });
+  };
+
+  https.get(version.url, handleResponse);
 }
 
 // If we're called directly, that means we're the download script. Let's go!
@@ -67,11 +72,13 @@ if (!module.parent) {
   var manifest = require("./manifest.json");
   var pkg = require("./package.json");
   var version = manifest.versions["v" + pkg.version];
+  var desiredBinary = pkg.bin[Object.keys(pkg.bin)[0]];
+  desiredBinary = resolve(__dirname, desiredBinary);
+  var platform = os.platform();
+  var arch = os.arch();
   if (!version) {
     throw new Error("Unknown version of " + pkg.name + ": " + version);
   }
-  var platform = os.platform();
-  var arch = os.arch();
   var platArch = [platform, arch].join("-");
   if (!version[platArch]) {
     throw new Error(pkg.name + " doesn't appear to be available for platform/architecture " + platArch);
@@ -81,11 +88,20 @@ if (!module.parent) {
       console.error("error installing " + pkg.name + ": " + err, err.stack);
       process.exit(1);
     }
-    fs.chmodSync(data.path, "0755");
-    // Symlink for windows .exe files
-    if (data.path.indexOf(".exe") === data.path.length - 4) {
-      var newPath = data.path.slice(0, -4);
-      fs.linkSync(data.path, newPath);
+    fs.renameSync(data.path, desiredBinary);
+    fs.chmodSync(desiredBinary, "0755");
+    // This handles windows .exe files
+    if (platform === "win32") {
+      var exe = desiredBinary + ".exe";
+      try {
+        fs.unlinkSync(exe);
+      }
+      catch (e) {
+        if (e.code !== "ENOENT") {
+          throw e;
+        }
+      }
+      fs.linkSync(desiredBinary, exe);
     }
   });
 }

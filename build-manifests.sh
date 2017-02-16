@@ -11,4 +11,9 @@ git ls-remote --tags https://github.com/kubernetes/kubernetes.git \
   | grep -v '{}' \
   > kubectl.tags;
 
+git ls-remote --tags https://github.com/kubernetes/minikube.git \
+  | sed 's/^.*tags\///' \
+  | grep -v '{}' \
+  > minikube.tags;
+
 node "$DIR/build-manifests.js"
