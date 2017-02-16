@@ -1,5 +1,5 @@
 {
-  "name": "kubectl-cli-temp-2017",
+  "name": "kubectl-cli",
   "version": "1.6.0-alpha.2",
   "description": "kubernetes management tool",
   "main": "index.js",
