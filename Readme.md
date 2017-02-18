@@ -13,6 +13,13 @@ So, this project does that for the following Kubernetes-related projects:
 
 If you find this useful, we'd love more tools!
 
+## How it works?
+
+This project publishes manifests for each of those tools (e.g. packages/kubectl/manifest.json)
+that contain URLs and SHA256 hashes for each supported architecture/platform combination. It also
+publishes `download.js` alongside them, which parses the version in `package.json` and downloads
+the appropriate version from `manifest.json`.
+
 ## CI
 
 There's a Travis build sent to run hourly that runs `build-manifests.sh` and errors if there's a
