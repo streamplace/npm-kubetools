@@ -13,6 +13,12 @@ So, this project does that for the following Kubernetes-related projects:
 
 If you find this useful, we'd love more tools!
 
+## CI
+
+There's a Travis build sent to run hourly that runs `build-manifests.sh` and errors if there's a
+new version of any of our binaries available. For now, that just sends an email to me and I update
+the script manually. Maybe eventually we'll do some kind of sweet auto-update.
+
 
 # LICENSE
 
