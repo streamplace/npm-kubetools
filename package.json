@@ -6,11 +6,14 @@
   "scripts": {
     "start": "docker run -e DONT_WORRY_I_AM_BUILDING_A_NEW_VERSION=true --rm -v $(pwd):/app node:0.10 /app/build-manifests.sh",
     "publish-all": "lerna exec node $(realpath publish.js)",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./build-manifests.sh"
   },
   "author": "Streamplace",
   "license": "MIT",
   "devDependencies": {
     "lerna": "2.0.0-beta.37"
+  },
+  "dependencies": {
+    "tar": "^2.2.1"
   }
 }
