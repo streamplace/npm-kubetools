@@ -1,6 +1,6 @@
 {
   "name": "helm-cli",
-  "version": "2.2.1",
+  "version": "2.2.3",
   "description": "package manager for kubernetes",
   "main": "index.js",
   "scripts": {

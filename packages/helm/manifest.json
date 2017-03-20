@@ -359,6 +359,50 @@
         "size": 12385843,
         "sha256": "15d3cdac13bf66e041fa2efda53901e883b8975315d5c242de925d95866ff9a8"
       }
+    },
+    "v2.2.2": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-darwin-amd64.tar.gz",
+        "size": 12324542,
+        "sha256": "500aaaa73918ddcea5fc034f4cca71f34c635b4a261b6daf625f31681b66a352"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-linux-amd64.tar.gz",
+        "size": 12406075,
+        "sha256": "d33047a7c96d14011e361cc32bb4046b46838077485e3a4d635957c230131742"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-linux-386.tar.gz",
+        "size": 11785624,
+        "sha256": "71e624df8343fb6baf6f1792ae304da141de9ee40ee931c512c922c434e5146f"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.2-windows-amd64.tar.gz",
+        "size": 12383743,
+        "sha256": "8ac8aae2cbe4ed346cfcdd96f5e5f4fc7b2b53fcecf625274d0600d1853ccbc9"
+      }
+    },
+    "v2.2.3": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.3-darwin-amd64.tar.gz",
+        "size": 12326895,
+        "sha256": "64420d467e03ceb666a4f22b89e08b93c06f76f5917fe539860b04cd5e5e515f"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.3-linux-amd64.tar.gz",
+        "size": 12405624,
+        "sha256": "fa434644d1afd92637369a033fd65b717d8dfa910127d335e8a82c8fad74cc35"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.3-linux-386.tar.gz",
+        "size": 11786734,
+        "sha256": "d338552c3ddf530462dac7d38aa28eda5467e8d5a2234c2909f29556287f5712"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.2.3-windows-amd64.tar.gz",
+        "size": 12388527,
+        "sha256": "1078cba41eca36da654cc97fabf8c6a2d9ecdeb4dabea85f5d22cf36c49c3ab1"
+      }
     }
   }
 }

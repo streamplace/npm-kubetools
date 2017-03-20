@@ -1,6 +1,6 @@
 {
   "name": "minikube-cli",
-  "version": "0.9.0",
+  "version": "0.17.1",
   "description": "tool for installing sweet local kubernetes clusters",
   "main": "index.js",
   "scripts": {
