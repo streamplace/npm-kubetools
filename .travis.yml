@@ -1,8 +1,12 @@
-
 language: node_js
-
 node_js:
-  - "0.10"
-
+- '0.10'
+before_install:
+- openssl aes-256-cbc -K $encrypted_1e09abfcf11c_key -iv $encrypted_1e09abfcf11c_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
 script:
-  - ./build-manifests.sh
+- ./ci-build.sh
+env:
+  global:
+  - secure: RBrQAjW7vYG7NLK9rQ/00u+U+gMC52RY4idKGkPhPHwniTnK8+KWUXn6IwusvWrGDsk8fel/Rz+0bc0dyVNR4EPftAugaROY6fWs5wk3EQtiw53n8APvPq6I3BCj1RyBkJ7QTHEZY2lPGdCGGcJXsicixmmWJjt0KkFEH/ds6DXgo0nOOWFSCOCoGaLRf9M37PCUhsXGOI6jpS7hiD3Wf/yOJ6ao6+TgfENWrIaurTVTI/oDhsAJu2S5UYLANZyUjacp6qGHpZQIjY6wsYSw9xVdY0jYkXgAv58Zv4FDz3ElRVNRMonJTeYJrkL+kZy6wJ8ZP5v2FTWmX/i1s/f7yBnt5ULJolOVLAezGSdORkEKqlNEtznFKfOVk6gP7eEl+OwgSY2vcmD/cx/loRnYxliSuc2Qtt79gf3ZzY8N7oPBDH8t2AzgHmnXZXIsUbC+LTuYDFc9+r5LBtWxtuSXgU1TTYGfiA1LqbBfbTBYMMzI3cMuFuU1p+Ms+6xH9rMkW3wVFg4Ia9fhar1W/sCd0JfsnKBrF9Kx8SAMSElHPRuKuArPKJB19mx3Lx6q8hGX+58GOm8I38A8g9UZiYX5GaVxmLfBJf1h/mummxQu+ZKCJvaRWr6n0BhfW9Ve7bSkBJDpVGaz3eNbU/0KQXnYVWj86WLrEQdD5btG4T2Rbzc=
+  - secure: kGdQMpWaudto7334G25+mieebQ43VzGXBaLffaPp4nIZUp6HTV6ChfLPJGuswIRYODRKtev/aWnv3Ce1Lbk7D0OH0imPZawqiFOW6ONZa/rX/LONVWeb51Jy8WFsRBw53OFNdI+bDcv40Atu7YbhZQ2ywWzL20ES13nTPxcEh/xiExX4n5+V6myigdDjahMTnLUgulgFcjr/5jRKbbzPS7DCptIUhNv/HHdlJ89dVo1Ra3ZqxAO/2Y1P3bF/6u93/tV4rpF0Tru/u0bTi/3FmqLPxogV656DZ+7vKsPFXcEZCgQuBctWJMKx8HohasFsi2SEd2loWuLEgAYRMfxcuWfLK8IeeTpo/vss02R/GTUjOWRGXZD/QE4wRA48s+qGwv/fq0IfwaQsYv2tY1wS509n0SnwBrg2kPSLGMBLlEN68MDyc8rogTqNIb+TNYTFwdiMc4V5TBxJPNs5TNZsazFQNgpOZ/3IXOXzrh6lVKVcpql+lrwXNQQp9j0v3RzB12mxo5qIXFXBO7hkb+rnjSJgc2mQkJ9EpbVnetPahgK3TJA1hVxk4MkgpiLpCD6HxKjHNqNKqxrCyA9/lPu3H9KluuG6ZwVoZWGZkwvMTTgXp3xaLdI2olVQJcQDI6BSr8N2Bdgtz1m/eefpqmOlxMoN6KJWQx/1jz1BfWujp9o=
