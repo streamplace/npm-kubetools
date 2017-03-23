@@ -15,6 +15,8 @@ npm config set unsafe-perm true
 npm config set '//registry.npmjs.org/:_authToken' $NPM_TOKEN
 npm run build-manifests
 
+set -x
+
 # If anything changed, we need to update git
 if git diff-index --quiet HEAD --; then
   exit 0
