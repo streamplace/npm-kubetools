@@ -15,10 +15,13 @@ npm config set unsafe-perm true
 npm config set '//registry.npmjs.org/:_authToken' $NPM_TOKEN
 npm run build-manifests
 
+changes="$(git diff)"
+
 # If anything changed, we need to update git
-if git diff-index --quiet HEAD --; then
+if [[ "$changes" == "" ]]; then
   exit 0
 else
+  set -x
   chmod 600 ~/.ssh/id_rsa
   git remote set-url origin 'git@github.com:streamplace/npm-kubetools.git'
   git add .

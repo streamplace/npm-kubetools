@@ -28,3 +28,4 @@ Travis now does a sweet auto-update if a new version is available.
 # LICENSE
 
 The license behind this project is MIT. The license behind all three tools is Apache-2.0.
+test
