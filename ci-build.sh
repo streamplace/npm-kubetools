@@ -19,6 +19,7 @@ npm run build-manifests
 if git diff-index --quiet HEAD --; then
   exit 0
 else
+  git remote set-url origin 'git@github.com:streamplace/npm-kubetools.git'
   git add .
   git commit -m "$(date +%Y-%m-%d) auto-update"
   git push origin master
