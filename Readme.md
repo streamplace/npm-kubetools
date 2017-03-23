@@ -22,12 +22,9 @@ the appropriate version from `manifest.json`.
 
 ## CI
 
-There's a Travis build set to run hourly that runs `build-manifests.sh` and errors if there's a
-new version of any of our binaries available. For now, that just sends an email to me and I update
-the script manually. Maybe eventually we'll do some kind of sweet auto-update.
+Travis now does a sweet auto-update if a new version is available.
 
 
 # LICENSE
 
 The license behind this project is MIT. The license behind all three tools is Apache-2.0.
-git@github.com:kubernetes/kubernetes.git
