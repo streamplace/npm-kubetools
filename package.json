@@ -5,7 +5,7 @@
   "main": "package.json",
   "scripts": {
     "start": "docker run -e DONT_WORRY_I_AM_BUILDING_A_NEW_VERSION=true -w /app --rm -v $(pwd):/app node:0.10 /app/build-manifests.sh",
-    "publish-all": "lerna exec node $(realpath publish.js)",
+    "publish-all": "lerna exec node $(pwd)/publish.js",
     "test": "./build-manifests.sh",
     "build-manifests": "DONT_WORRY_I_AM_BUILDING_A_NEW_VERSION=true ./build-manifests.sh"
   },
