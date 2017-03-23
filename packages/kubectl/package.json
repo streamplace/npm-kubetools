@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node download.js",
-    "prepublish": "cp ../../download.js ."
+    "postinstall": "node download.js",
+    "prepublish": "echo '' > kubectl && cp ../../download.js ."
   },
   "bin": {
     "kubectl": "./kubectl"

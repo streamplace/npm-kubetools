@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node download.js",
-    "prepublish": "cp ../../download.js ."
+    "postinstall": "node download.js",
+    "prepublish": "echo '' > minikube && cp ../../download.js ."
   },
   "bin": {
     "minikube": "./minikube"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streamplace/npm-kubetools/tree/master/packages/kubectl"
+    "url": "https://github.com/streamplace/npm-kubetools/tree/master/packages/minikube"
   },
   "keywords": [
     "kubectl",
