@@ -1,6 +1,6 @@
 {
   "name": "kubectl-cli",
-  "version": "1.6.0-beta.4",
+  "version": "1.6.0-1",
   "description": "kubernetes management tool",
   "main": "index.js",
   "scripts": {
