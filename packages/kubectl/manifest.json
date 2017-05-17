@@ -9413,6 +9413,18 @@
         "size": 66162176,
         "sha256": "18736cd5c467b8fb10728a1ad8c5e094cca560541dc508dd114c0b102bcf55b1"
       }
+    },
+    "v1.6.4-beta.1": {
+      "darwin-x64": null,
+      "darwin-x86": null,
+      "linux-arm": null,
+      "linux-arm64": null,
+      "linux-ppc64": null,
+      "linux-s390x": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null,
+      "win32-x86": null
     }
   }
 }
