@@ -515,10 +515,48 @@
       }
     },
     "v2.5.0": {
-      "darwin-x64": null,
-      "linux-x64": null,
-      "linux-x86": null,
-      "win32-x64": null
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-darwin-amd64.tar.gz",
+        "size": 14973431,
+        "sha256": "b29e2e7b3b8da0f8b2671a4116d512a893059b35f016d64b116d18f35d8779e8"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-linux-amd64.tar.gz",
+        "size": 15067579,
+        "sha256": "ade36ef537eede9642c5b4725302470a4978d7ae41e89a37d1142bc9de13b789"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-linux-386.tar.gz",
+        "size": 14030198,
+        "sha256": "b38930187b2d528898e7892417512c8a189230671a510646f476da7f66938100"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-windows-amd64.tar.gz",
+        "size": 15049177,
+        "sha256": "64f13dec611fc29db89bfe1a33925a11aa634ea51561f3adbb1a8b546a42d62c"
+      }
+    },
+    "v2.5.0-1": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-darwin-amd64.tar.gz",
+        "size": 14973431,
+        "sha256": "b29e2e7b3b8da0f8b2671a4116d512a893059b35f016d64b116d18f35d8779e8"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-linux-amd64.tar.gz",
+        "size": 15067579,
+        "sha256": "ade36ef537eede9642c5b4725302470a4978d7ae41e89a37d1142bc9de13b789"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-linux-386.tar.gz",
+        "size": 14030198,
+        "sha256": "b38930187b2d528898e7892417512c8a189230671a510646f476da7f66938100"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.5.0-windows-amd64.tar.gz",
+        "size": 15049177,
+        "sha256": "64f13dec611fc29db89bfe1a33925a11aa634ea51561f3adbb1a8b546a42d62c"
+      }
     }
   }
 }
