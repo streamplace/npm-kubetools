@@ -20,9 +20,12 @@ that contain URLs and SHA256 hashes for each supported architecture/platform com
 publishes `download.js` alongside them, which parses the version in `package.json` and downloads
 the appropriate version from `manifest.json`.
 
-## CI
+## Auto-update
 
-Travis now does a sweet auto-update if a new version is available.
+Once a day, Travis scrapes all the git tags on all of these repos and publishes new versions if any
+exist. [The resulting commits look like this](https://github.com/streamplace/npm-kubetools/commit/81c073900143c169b1cc8634647f15655ec42f06). Inevitably someday this script will run
+after the git tags are updated but before the new versions are published, and everything will probably
+break. Hasn't happened yet though!
 
 ## Credits
 
