@@ -24,6 +24,10 @@ the appropriate version from `manifest.json`.
 
 Travis now does a sweet auto-update if a new version is available.
 
+## Credits
+
+[Eli](https://twitter.com/elimallon) made this as part of [Streamplace](https://stream.place).
+
 
 # LICENSE
 
