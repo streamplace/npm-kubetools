@@ -767,6 +767,50 @@
         "size": 14958513,
         "sha256": "c2eff97ff48b3d089701deec642529f4e87947c0e46022e1b6fd2bbcb005cdbc"
       }
+    },
+    "v2.8.2": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-darwin-amd64.tar.gz",
+        "size": 14877299,
+        "sha256": "a0a8cf462080b2bc391f38b7cf617618b189cdef9f071c06fa0068c2418cc413"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-linux-amd64.tar.gz",
+        "size": 14973808,
+        "sha256": "614b5ac79de4336b37c9b26d528c6f2b94ee6ccacb94b0f4b8d9583a8dd122d3"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-linux-386.tar.gz",
+        "size": 13938541,
+        "sha256": "9b96b8bb7f78109f581b5f23c5ebe842dacfd59f0e70ecd52d5a942e21a573af"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-windows-amd64.tar.gz",
+        "size": 14977362,
+        "sha256": "cb6ea5d60f202c752f1f0777e4bebd98c619a2c18e52468df7a302e783216f23"
+      }
+    },
+    "v2.8.2-rc1": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-rc1-darwin-amd64.tar.gz",
+        "size": 14877520,
+        "sha256": "bafb119e388bf844f1e93ce9e0deab57f4e32ed192f95848e03ff2a6e3bee02c"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-rc1-linux-amd64.tar.gz",
+        "size": 14973426,
+        "sha256": "557986b10ea9abcd7090d8faab96329cad1fdfbb859c3dc4676a9f2c9d5c1f7c"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-rc1-linux-386.tar.gz",
+        "size": 13934420,
+        "sha256": "df3e899cbce5096e51d8eda06af31a6459b7f3b7281e75a135d68475fb91dfd0"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.8.2-rc1-windows-amd64.tar.gz",
+        "size": 14977455,
+        "sha256": "ef05d5442502cfe12c4c50a7e51d6baa10b29b0a664c0fa3a8a68d747f702bfa"
+      }
     }
   }
 }
