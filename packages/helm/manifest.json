@@ -1317,6 +1317,28 @@
         "size": 22979037,
         "sha256": "4efc1297f42ee8798803afffbc804f17893469353a54e6e1d8cbf5d69b2a073a"
       }
+    },
+    "v2.13.0-rc.2": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-rc.2-darwin-amd64.tar.gz",
+        "size": 24087824,
+        "sha256": "684c2f217a68059429ad79fa2cb674cfbbfe9c5150a2cd4e865a81145cee098c"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-rc.2-linux-amd64.tar.gz",
+        "size": 22946717,
+        "sha256": "f94b7c15b4536d18a02a3a172918b59b79b7c40b126416b9c8d59dcb75e88afc"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-rc.2-linux-386.tar.gz",
+        "size": 21433371,
+        "sha256": "6a5f303a8d4a68694708ec89106f565bb64672ea412ce66edd0f4cd80f5e2115"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.0-rc.2-windows-amd64.tar.gz",
+        "size": 22982170,
+        "sha256": "facff01f3c5beadac6d2044f53b272688e2ed8eebae448f73aa9563a3a0149df"
+      }
     }
   }
 }
