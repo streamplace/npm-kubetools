@@ -1361,6 +1361,50 @@
         "size": 22978976,
         "sha256": "e0143c3fc6c3e585e62cfa31de8d5e7e00ee3a702ed7416157360fcdd2026a72"
       }
+    },
+    "v2.13.1": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-darwin-amd64.tar.gz",
+        "size": 24089303,
+        "sha256": "c9564c4133349b98a8c1dda42fdb6545f6e4bfdf0980cdfc38cf76d2f8e5e701"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz",
+        "size": 22949819,
+        "sha256": "c1967c1dfcd6c921694b80ededdb9bd1beb27cb076864e58957b1568bc98925a"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-386.tar.gz",
+        "size": 21436620,
+        "sha256": "b90303f1b4e867e23dd0a5b0a663dfb5eb3b60d8b4196072bb9ca2bee7bf0637"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-windows-amd64.tar.gz",
+        "size": 22983102,
+        "sha256": "fc810c306526197dce1d43068bc6385dad13b9d86e912bfd79fc06fe9d275a3d"
+      }
+    },
+    "v2.13.1-rc.1": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-rc.1-darwin-amd64.tar.gz",
+        "size": 24088966,
+        "sha256": "c2be47cc48cf06bbb9c849d393d3fdc1405264ad188b3262546f96b35fae365c"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-rc.1-linux-amd64.tar.gz",
+        "size": 22952513,
+        "sha256": "f715acaa63860eabce6bea825a77db209fe64d38b06871d23be626f927d20f5e"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-rc.1-linux-386.tar.gz",
+        "size": 21436504,
+        "sha256": "7a1f5e6dced864c490c60bbd77ff78348138529f22482baa6db9b821656cc5bf"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-rc.1-windows-amd64.tar.gz",
+        "size": 22982231,
+        "sha256": "5e3a9495c061ad08b1bab738a0427528d1332e95c265f76b62e66b20bfbea0c9"
+      }
     }
   }
 }
