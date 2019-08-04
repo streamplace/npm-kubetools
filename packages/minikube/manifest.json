@@ -898,6 +898,11 @@
         "sha256": "123fc9f5656333fb2927cf91666a91cd5b28ef97503418ac2a90a2109e518ed9"
       },
       "win32-x64": null
+    },
+    "v1.3.0": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "win32-x64": null
     }
   }
 }
