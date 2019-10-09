@@ -1567,6 +1567,12 @@
       "linux-x64": null,
       "linux-x86": null,
       "win32-x64": null
+    },
+    "v3.0.0-beta.4": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
