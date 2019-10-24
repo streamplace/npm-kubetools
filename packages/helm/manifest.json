@@ -1645,6 +1645,28 @@
       "linux-x64": null,
       "linux-x86": null,
       "win32-x64": null
+    },
+    "v2.15.1": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-darwin-amd64.tar.gz",
+        "size": 25747711,
+        "sha256": "f51830036f746b7f758a40bf49e02527cc5a9f1b78c5809023e570d318eaff5c"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-amd64.tar.gz",
+        "size": 24527202,
+        "sha256": "b4d366bd6625477b2954941aeb7b601946aa4226af6728e3a84eac4e62a84042"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-linux-386.tar.gz",
+        "size": 22918756,
+        "sha256": "4bc1ec87efa27eda155261d261b7e1cad763bd2ee2c1db9d9c74efb53f7d2a46"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.15.1-windows-amd64.tar.gz",
+        "size": 24575775,
+        "sha256": "c4ae2ac9a80ab9f90630ee8126dc4677b858cb65beb95349a47dfe5ca716ed1a"
+      }
     }
   }
 }
