@@ -1739,6 +1739,12 @@
         "size": 25333830,
         "sha256": "a29836a08ba89f12ec67ddec46a0e64c0e3be7d7935edbf75190bed7c455bb88"
       }
+    },
+    "v3.0.0-rc.2": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
