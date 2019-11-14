@@ -26593,6 +26593,318 @@
         "size": 42471936,
         "sha256": "4dd4304e27b327329b880464cd095107cd9bc0e46198f8c7e12f17efbc558eff"
       }
+    },
+    "v1.14.10-beta.0": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/darwin/amd64/kubectl",
+        "size": 48707608,
+        "sha256": "cf36817e5b119a792b0fb6997582c39bd3aeb6b1cf67794d3ded103a42226932"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/darwin/386/kubectl",
+        "size": 42902836,
+        "sha256": "a589d2a5afd04f6685ec5ca26975b4989ce48e7e0eff6031c07c78f0bdbccf53"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/arm/kubectl",
+        "size": 37296024,
+        "sha256": "ccf675233c6f9edbd751ef4cfa746fb1163773b26ce0f0fee2a066963d73486e"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/arm64/kubectl",
+        "size": 41337728,
+        "sha256": "63c3945ce560272552b286239bef4fae982f73f76f94670166b430fced6a7a8c"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/ppc64le/kubectl",
+        "size": 41863456,
+        "sha256": "aaed473518e168d9fc99cb7e67a6ae75899bb951dc36d84da86b7cefa2378755"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/s390x/kubectl",
+        "size": 43306336,
+        "sha256": "ff1660ca94ec1cc823720f716a5d44095ae637a9b5b375a5f2901018c72e28fd"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/amd64/kubectl",
+        "size": 43115328,
+        "sha256": "c11ae0099682afb6459d33932da27e177de004f080aba83e2d49cb0a5bf2c93d"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/linux/386/kubectl",
+        "size": 37823008,
+        "sha256": "e704d3080f781136b32557d352596aa1ab3b8eca5527c6ec225342f23e3ec88b"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/windows/amd64/kubectl.exe",
+        "size": 43563008,
+        "sha256": "b8764bf716703887abd1c4a206604bc27cc3d783f82c82b8fa3480ddd4e27e40"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.10-beta.0/bin/windows/386/kubectl.exe",
+        "size": 37966848,
+        "sha256": "d56d52b3402edac8d81e619a258bcc1ec33ef4cee19762b2fba5ca357b700d8b"
+      }
+    },
+    "v1.14.9": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/darwin/amd64/kubectl",
+        "size": 48707608,
+        "sha256": "8d1b0e0221d27a34dcf762af5aa58e4c382d5b1f9e644f258472a69bea7edff7"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/darwin/386/kubectl",
+        "size": 42902836,
+        "sha256": "f0cf9080793c7cd4de7707e3742d6ae4ecd05f4823b49ec6e3954c3a99863af9"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/arm/kubectl",
+        "size": 37296024,
+        "sha256": "24d095b4282724a420446494a388b2f04aa4e8b96cd8ead8d7916b5504888734"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/arm64/kubectl",
+        "size": 41337728,
+        "sha256": "f0a76fd9509f2255e6ffeb936efd536457c09dff74c5be074bb0d94001618777"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/ppc64le/kubectl",
+        "size": 41863456,
+        "sha256": "2ddc3deb69029392d2770f752f3aca48ed6b9c0f54d2c79cfec8bfdd7cdd6ada"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/s390x/kubectl",
+        "size": 43306336,
+        "sha256": "1eaa611a8af4405cdf9d9521d0864ba472351b6740a6cbfb12af8eafadb05f0d"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/amd64/kubectl",
+        "size": 43115328,
+        "sha256": "d2a31e87c5f6deced4ba8899f9c465e54822f0cd146f32ea83cb1daafa5d9c4f"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/linux/386/kubectl",
+        "size": 37823008,
+        "sha256": "c1f21f2fe86fbd933612364e393f804992aac9deeab4d139a29ba8b67660fe6f"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/windows/amd64/kubectl.exe",
+        "size": 43563008,
+        "sha256": "d316773d729f92caafccd778fc2aa683b1ff1d7a1732b86e573e3177d1698641"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.14.9/bin/windows/386/kubectl.exe",
+        "size": 37966848,
+        "sha256": "0373ad27d6b6a224b6d21763a802778e3605022dfd57b5b36857df3f4cf88941"
+      }
+    },
+    "v1.15.6": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/darwin/amd64/kubectl",
+        "size": 48596112,
+        "sha256": "1b8e747984ae3f9aa5a199bd444823d703dcd4dbf0617347b3b3aea254ada7b1"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/darwin/386/kubectl",
+        "size": 42803636,
+        "sha256": "6d74bf14f88125bad41dc1d2b38b477d603390a45b242c2012dbe5b0c9c10437"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/arm/kubectl",
+        "size": 37187944,
+        "sha256": "3d61c27ecf56e2e35dbc6dcfe6b4b7d8258a646be76192ad5db3feeb576f6636"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/arm64/kubectl",
+        "size": 41228416,
+        "sha256": "04aee0d812990391460588d94b768cb6aa012dab8ec03633ec2c5915332d26d9"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/ppc64le/kubectl",
+        "size": 41754112,
+        "sha256": "7131f3525c7b3d69f30435a27b0ee7688fa4326b7a13aedcf71c8e7be3ccddab"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/s390x/kubectl",
+        "size": 43197024,
+        "sha256": "868cb79b5ae33d5940a1f30d306f003eace28270cce4ef8a1dc6888c3d653a9c"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/amd64/kubectl",
+        "size": 42993696,
+        "sha256": "522115e0f11d83c08435a05e76120c89ea320782ccaff8e301bd14588ec50145"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/linux/386/kubectl",
+        "size": 37726944,
+        "sha256": "ffff98b2f2d559de8bca8cc936abe3d00ef9ecffe20f1a3a9f2223b1cc8ea8d8"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/windows/amd64/kubectl.exe",
+        "size": 43478016,
+        "sha256": "cd134c5746e39b985df979a944876c0d61ae88e79d954f8534a66bc84cd8a7fb"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.6/bin/windows/386/kubectl.exe",
+        "size": 37898752,
+        "sha256": "07a31e9a09cbe010d7a0071b3bae9a604142955207f0e83c5fe62d4e1d6ba455"
+      }
+    },
+    "v1.15.7-beta.0": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/darwin/amd64/kubectl",
+        "size": 48596112,
+        "sha256": "9d25584dd89b8fe7973ed6c81cb64c9841bf048b4dd373f14fe5e879c0f8a610"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/darwin/386/kubectl",
+        "size": 42803636,
+        "sha256": "0440d25fd0de26c3c4813e0009903e423747ecb89ee1f10135523a3e8fa5957f"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/arm/kubectl",
+        "size": 37187944,
+        "sha256": "28a478827c78c4169698765ebe70beadc0f52fdf62017a1a6251560c9ba8b565"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/arm64/kubectl",
+        "size": 41228416,
+        "sha256": "4462c5a8c33481f917d58f5e3a253947a287df4c41729dedbaa8055768571792"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/ppc64le/kubectl",
+        "size": 41754112,
+        "sha256": "8e7144ef2e430eb380fb6e32acb20439b42ffdb99efa0b3ebd3dc6f4982c733d"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/s390x/kubectl",
+        "size": 43197024,
+        "sha256": "e51ed39f53aabd441b3828d383f4acc87cc0cb6d2ca318f58b37834dd8da185f"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/amd64/kubectl",
+        "size": 42993696,
+        "sha256": "082cdb4e66adecc537f0861ad916b5d4597c70f3dd7f5e0e9a0ccd1de43ed859"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/linux/386/kubectl",
+        "size": 37726944,
+        "sha256": "39065ef2a94ddbdfc6399a4a42b7b1e280ed9651aaafbbe36194254e4af0e636"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/windows/amd64/kubectl.exe",
+        "size": 43478016,
+        "sha256": "aefdb348793be958a577774e422914f590e62904e1d8d4fb8c292a64294d37da"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.7-beta.0/bin/windows/386/kubectl.exe",
+        "size": 37898752,
+        "sha256": "5881ea859cb8732e6aebde24a9da248244fec09a6763d62aaf8505b39345d8a4"
+      }
+    },
+    "v1.16.3": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/darwin/amd64/kubectl",
+        "size": 53015744,
+        "sha256": "f1f30f2ad2cd1f9bf73d9f99e8de05f44fce8b629334484a7a14b74910738f3e"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/darwin/386/kubectl",
+        "size": 47656428,
+        "sha256": "0285b71058183faea33f6f5b56309732955b58932a85e689e46e640d15931536"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/arm/kubectl",
+        "size": 40403768,
+        "sha256": "2cc711c92eea6ca66aeefa2dab73c553db3551a267f8ee102daa9f2fbf34ee9b"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/arm64/kubectl",
+        "size": 44707296,
+        "sha256": "ba7e98f837ba892eced9cae962c3648fe507c7fb4e9d7b1b969da8326bbc5dd9"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/ppc64le/kubectl",
+        "size": 45298528,
+        "sha256": "ee33d1bd9ae49a8944468b081f0aa463abc172515423f1b3499700c2c68ea400"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/s390x/kubectl",
+        "size": 46938048,
+        "sha256": "350c00378d97a86b661c512926db93f7f923b5700e7aeed2bf39830ed58046ee"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/amd64/kubectl",
+        "size": 46681472,
+        "sha256": "cded1b46405741575f31024b757fd967645e815bb0ab1c5f5fcd029f25cc0f2d"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/linux/386/kubectl",
+        "size": 41893152,
+        "sha256": "64aaeb8c49bb544a7297ed3221015c62c3b43a6089b901d51b4a070517bb2723"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/windows/amd64/kubectl.exe",
+        "size": 47195136,
+        "sha256": "46b1bc7d70de165232e9df921f6a35f3e4321984f3f44efd6a0007c4506a0c4b"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.3/bin/windows/386/kubectl.exe",
+        "size": 42066944,
+        "sha256": "3c971422c08384cffa40323365cc40799cf078216bd208b8f76587807dfdea70"
+      }
+    },
+    "v1.16.4-beta.0": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/darwin/amd64/kubectl",
+        "size": 53015744,
+        "sha256": "a64e9922880e07c853d897b178262cfe4067e9e4c65a1c2c2a17f2f37457d69d"
+      },
+      "darwin-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/darwin/386/kubectl",
+        "size": 47656428,
+        "sha256": "a24cd9e6e93be8181b2cf84eb570bf3e5d81111d5d5c1b8f7a9e0eaf74890966"
+      },
+      "linux-arm": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/arm/kubectl",
+        "size": 40403768,
+        "sha256": "b7e9976025e4b2bd2624f17d5f181883069fda55e86fd79fe7e0f5673bbb712c"
+      },
+      "linux-arm64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/arm64/kubectl",
+        "size": 44707296,
+        "sha256": "81cce18771ac7a6f39b0b87b18f6b427921dce83b2ebfa7f856cd4d7c31651fc"
+      },
+      "linux-ppc64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/ppc64le/kubectl",
+        "size": 45298528,
+        "sha256": "cd4714c55679fc095338c18fef4afeacefe79768b74e4242c46d4d3bfc259cab"
+      },
+      "linux-s390x": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/s390x/kubectl",
+        "size": 46938048,
+        "sha256": "d8191c1b937f3c28b1855a38235818b2a09d8a7e1512371c9a6afe69f71d4cfe"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/amd64/kubectl",
+        "size": 46681472,
+        "sha256": "d641388a0f15b911f52a9a4cf6349947b54b5587210e9bb17f0811e30a89b75b"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/linux/386/kubectl",
+        "size": 41893152,
+        "sha256": "bccfc09190d690a06c66740da4bda4681d3d279421dc6f0f46c6158d8f6921de"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/windows/amd64/kubectl.exe",
+        "size": 47195136,
+        "sha256": "245ae0a647e89026fd101b7bcc95c08acb7088c7116299836352a283f5fee101"
+      },
+      "win32-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-release/release/v1.16.4-beta.0/bin/windows/386/kubectl.exe",
+        "size": 42066944,
+        "sha256": "b27d5b3fcfdd1fd37d6f6df8d3bac2c1f64755f331c6e9b3557f2ac605d71180"
+      }
     }
   }
 }
