@@ -1095,6 +1095,11 @@
         "sha256": "dbc69e8722721b0c138d8c4fccc8f878d36ab84e974d906f90b9fa21c2886df9"
       },
       "win32-x64": null
+    },
+    "v1.7.0-beta.2": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "win32-x64": null
     }
   }
 }
