@@ -1843,6 +1843,56 @@
       "linux-x64": null,
       "linux-x86": null,
       "win32-x64": null
+    },
+    "v2.16.2": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.2-darwin-amd64.tar.gz",
+        "size": 26558463,
+        "sha256": "8bee3a69bd873c09dd07dc12594837f03a13b443727c7ce76db7b779c4ee9794"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.2-linux-amd64.tar.gz",
+        "size": 25263321,
+        "sha256": "91911d819131380ed6591e09a56df38db0b958d31c8a868a5ab42c29f8251cae"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.2-linux-386.tar.gz",
+        "size": 24339516,
+        "sha256": "bf60f10c15eb94a939810b72ceef44ab22e5e633185a38adb79da0a8fa26c421"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.2-windows-amd64.tar.gz",
+        "size": 25337655,
+        "sha256": "be1f40e56672a4b45813bc0ad3acb2573f2c8cf248d942b30d81d8735021c5ee"
+      }
+    },
+    "v2.16.3": {
+      "darwin-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.3-darwin-amd64.tar.gz",
+        "size": 26556949,
+        "sha256": "df2a38d1c27c2d3e5ead63c872f5409e8bea091451db6bc6b81898b19981d4cb"
+      },
+      "linux-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.3-linux-amd64.tar.gz",
+        "size": 25263741,
+        "sha256": "9678eb726d6870e8eded204190357a0f494ed9d1803781b4bb80dde6427b086e"
+      },
+      "linux-x86": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.3-linux-386.tar.gz",
+        "size": 24340881,
+        "sha256": "c028d0e1ae3ae1b52cb7a483ecb4fc82b10a96551559a6130bd59e70b2102f43"
+      },
+      "win32-x64": {
+        "url": "https://storage.googleapis.com/kubernetes-helm/helm-v2.16.3-windows-amd64.tar.gz",
+        "size": 25335857,
+        "sha256": "9a1af189be972166aad701fafbd50ba9859013ab88504f4b66cf55bf59a463db"
+      }
+    },
+    "v3.1.0": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
