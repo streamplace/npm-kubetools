@@ -1977,6 +1977,18 @@
       "linux-x64": null,
       "linux-x86": null,
       "win32-x64": null
+    },
+    "v3.1.3": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
+    },
+    "v3.2.0": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
