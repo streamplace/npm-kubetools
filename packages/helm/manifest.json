@@ -2011,6 +2011,12 @@
         "size": 25345976,
         "sha256": "bcec96b343a2cd488c1fb4a6603dc08d282b68bf5de0a360579046cca84728e7"
       }
+    },
+    "v3.2.1": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
