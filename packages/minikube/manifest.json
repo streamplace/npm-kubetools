@@ -1507,6 +1507,15 @@
         "size": 58906624,
         "sha256": "0dddecb223b61cd82e2a3e610c23a62fd20189fe13ee8538fc973cea0a767a46"
       }
+    },
+    "v1.14.0": {
+      "darwin-x64": null,
+      "linux-x64": {
+        "url": "https://github.com/kubernetes/minikube/releases/download/v1.14.0/minikube-linux-amd64",
+        "size": 58733392,
+        "sha256": "8727635489be895d9b9cfaa5cb599f45799a28fb07e0a2aac351a9aa1c4b46c1"
+      },
+      "win32-x64": null
     }
   }
 }
