@@ -2279,6 +2279,12 @@
       "linux-x64": null,
       "linux-x86": null,
       "win32-x64": null
+    },
+    "v3.5.2": {
+      "darwin-x64": null,
+      "linux-x64": null,
+      "linux-x86": null,
+      "win32-x64": null
     }
   }
 }
