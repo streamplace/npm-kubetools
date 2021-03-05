@@ -1678,6 +1678,19 @@
         "sha256": "7a330bcd45c96633c14aabcae74b3308eacf6e552a5f6ccd565a03e2f293785f"
       },
       "win32-x64": null
+    },
+    "v1.18.1": {
+      "darwin-x64": {
+        "url": "https://github.com/kubernetes/minikube/releases/download/v1.18.1/minikube-darwin-amd64",
+        "size": 59174304,
+        "sha256": "afca0cf5063e8b444b2201808fde3b95a8c59c509bd3e77574111697adb51315"
+      },
+      "linux-x64": {
+        "url": "https://github.com/kubernetes/minikube/releases/download/v1.18.1/minikube-linux-amd64",
+        "size": 59794699,
+        "sha256": "86f65235361ebe4916350d988c756fcb2f27fc1bd3e2d84912462b39bb660dfe"
+      },
+      "win32-x64": null
     }
   }
 }
